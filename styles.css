@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template: repeat(24, 1fr) / repeat(12, 1fr);
+}
+
+header {
+  grid-row: ;
+}
