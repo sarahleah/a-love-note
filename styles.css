@@ -3,13 +3,27 @@
   padding: 0;
   box-sizing: border-box;
   height: auto;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 .grid-wrapper {
   display: grid;
+  width: 100%;
   grid-template: repeat(24, 1fr) / repeat(12, 1fr);
 }
 
 header {
-  grid-row: ;
+  grid-row: 1 / 5;
+  grid-column: 1 / 13;
+  z-index: 10;
+  background-image: url('resources/climbing.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  color: aliceblue;
+}
+
+img {
+  grid-row: 8 / 16;
 }
