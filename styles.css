@@ -17,10 +17,6 @@ header {
   grid-row: 1 / 5;
   grid-column: 1 / 13;
   z-index: 10;
-  background-image: url('resources/climbing.jpg');
-  background-size: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
   color: aliceblue;
 }
 
