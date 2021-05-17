@@ -14,8 +14,15 @@
   grid-template: repeat(24, 1fr) / repeat(12, 1fr);
 }
 
+header h1 {
+  font-weight: 600px;
+  font-style: italic;
+  font-size: 5vh;
+}
+
 header {
-  
+  padding: 30%;
+  font-family: 'Lora', serif;
   grid-row: 1 / 9;
   grid-column: 1 / 13;
   z-index: 10;
@@ -28,15 +35,15 @@ header {
 
 .flex-wrapper {
   background-color: #D0D2D1;
-  grid-area: 9 / 1 / 18 / 13;
+  grid-area: 9 / 1 / 25 / 13;
   display: flex;
   justify-content: space-around;
-  align-items: top;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 
 .flex-wrapper figure {
-  height: 50vh;
+  height: 40vh;
   flex-grow: 1;
 }
 
@@ -45,4 +52,14 @@ img {
   min-width: 100%;
   object-fit: cover;
   vertical-align: bottom;
+}
+
+.last {
+  min-height: 100%;
+}
+
+@media screen and (max-width: 870px) {
+  .last {
+    max-width: 50%;
+  }
 }
