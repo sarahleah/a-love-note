@@ -7,6 +7,10 @@
   max-width: 100%;
 }
 
+figure {
+  display: inline;
+}
+
 .grid-wrapper {
   display: grid;
   width: 100%;
@@ -14,7 +18,7 @@
 }
 
 header {
-  grid-row: 1 / 5;
+  grid-row: 1 / 9;
   grid-column: 1 / 13;
   z-index: 10;
   background-image: url('resources/climbing.jpg');
@@ -24,6 +28,18 @@ header {
   color: aliceblue;
 }
 
-img {
-  grid-row: 8 / 16;
+.flex-wrapper {
+  grid-area: 9 / 1 / 18 / 13;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  background-color: #D0D2D1;
+  flex-wrap: wrap;
+}
+
+.flex-wrapper img {
+  max-width: 50%;
+  flex: 1 1;
+  padding: 1rem;
+  min-height: 100%;
 }
